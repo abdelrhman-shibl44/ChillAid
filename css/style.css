@@ -503,7 +503,7 @@ header .container h1 span {
     }
 
     .landing .content p {
-        width: 300px;
+        width: 250px;
     }
 }
 
@@ -715,6 +715,8 @@ section:nth-of-type(4) .container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px
 }
+
+
 
 section:nth-of-type(4) .container article {
     background-color: #fff;
@@ -1156,7 +1158,7 @@ section:nth-of-type(9) form input {
 
 @media(max-width:687px) {
     section:nth-of-type(9) form input {
-        width: 300px;
+        width: 225px;
         margin: 30px auto;
     }
 }
@@ -1207,7 +1209,7 @@ section:nth-of-type(9) form .info p {
 
 @media(max-width:768px) {
     section:nth-of-type(9) form .info p {
-        width: 300px;
+        width: 250px;
         margin: 0 auto;
     }
 
@@ -1216,8 +1218,7 @@ section:nth-of-type(9) form .info p {
 /* End section 9*/
 footer {
     padding-top: 80px;
-    padding-bottom: 80px;
-    background-image: url(/images/background-03.jpg);
+    . background-image: url(/images/background-03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1457,9 +1458,6 @@ footer .container .box:nth-of-type(4) span {
     justify-content: space-between;
     align-items: center;
     padding: 10px 170px;
-    right: 0;
-    left: 0;
-    position: absolute;
     background-color: #fff;
     bottom: 0px;
     z-index: 3;
@@ -1467,6 +1465,7 @@ footer .container .box:nth-of-type(4) span {
     color: #A5A6AA;
     background-color: #282E39;
     text-align: center;
+    margin-top: 10px;
 }
 
 .footer a {
@@ -1495,4 +1494,14 @@ footer .container .box:nth-of-type(4) p {
     .footer span {
         margin: 0 auto;
     }
+
+    /* container responsive */
+    section:nth-of-type(4) .container,
+    section:nth-of-type(6) .container,
+    section:nth-of-type(8) .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+
+
 }
